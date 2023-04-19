@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculadora">
+      <input type="text" class="resultado" id="resultado" disabled />
+      <div class="fila">
+        <div class="columna">
+          <button onclick="agregarNumero(7)">7</button>
+        </div>
+        <div class="columna">
+          <button onclick="agregarNumero(8)">8</button>
+        </div>
+        <div class="columna">
+          <button onclick="agregarNumero(9)">9</button>
+        </div>
+        <div class="columna operacion">
+          <button onclick="operacion('+')">+</button>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="columna">
+          <button onclick="agregarNumero(4)">4</button>
+        </div>
+        <div class="columna">
+          <button onclick="agregarNumero(5)">5</button>
+        </div>
+        <div class="columna">
+          <button onclick="agregarNumero(6)">6</button>
+        </div>
+        <div class="columna operacion">
+          <button onclick="operacion('-')">-</button>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="columna">
+          <button onclick="agregarNumero(1)">1</button>
+        </div>
+        <div class="columna">
+          <button onclick="agregarNumero(2)">2</button>
+        </div>
+        <div class="columna">
+          <button onclick="agregarNumero(3)">3</button>
+        </div>
+        <div class="columna operacion">
+          <button onclick="operacion('*')">*</button>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="columna">
+          <button class="borrar" onclick="borrar()">C</button>
+        </div>
+        <div class="columna">
+          <button onclick="agregarNumero(0)">0</button>
+        </div>
+        <div class="columna">
+          <button onclick="agregarDecimal()">.</button>
+          
+        </div>
+        <div class="columna operacion">
+          <button onclick="operacion('/')">/</button>
+          <button class="igual" onclick="resultado()">=</button>
+          
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
