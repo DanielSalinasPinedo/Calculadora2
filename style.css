@@ -37,7 +37,7 @@
   }
   
   .columna button {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin: 5px;
     font-size: 20px;
@@ -61,8 +61,18 @@
   .igual {
     background-color: #4caf50;
     color: #fff;
+    width: 69px;
   }
   .columna.operacion button.decimal {
     background-color: #f2f2f2;
     color: #333;    
   }  
+
+  .lista{
+    float: right;
+    margin-right: 400px;
+  }
+
+  .historial{
+    flex: auto !important;
+  }
