@@ -1,3 +1,6 @@
+let body =  document.querySelector('#contenido');
+let ul = document.createElement("ul");
+
 let operador = '';
 let num1 = 0;
 let num2 = 0;
@@ -57,4 +60,13 @@ function resultado() {
   }
 
   resultado.value = total;
+  
+  let li = document.createElement("li");
+  li.innerHTML = `<p>${num1} ${operador} ${num2} = ${total}</p>`
+  ul.appendChild(li);
+  body.appendChild(ul);
+}
+
+function history(){
+  ul.innerHTML = "";
 }
